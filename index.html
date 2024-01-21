@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD Basics</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+  <h1>Sticky Notes</h1>
+  <div class="container">
+    <div class="left">
+      <form id="form">
+        <label >Write Your Notes </label>
+        <br><br>
+        <textarea id="tabtext" cols="30" rows="10" placeholder="Type here..."></textarea>
+        <br>
+        <div id="msg">
+        </div><br>
+        <button type="submit">Add</button>
+      </form>
+    </div>
+    <div class="right">
+      <label>Your notes are here!</label>
+      <div id="posts">
+        <div><br>
+          <p>Post 1</p>
+          <span class="options">
+            <i onClick="editNotes(this)" class="fas fa-edit"></i>
+            <i onClick="deleteNotes(this)" class="fas fa-trash-alt"></i>
+          </span>
+        </div>
+        <div>
+          <p>Post 2</p>
+          <span class="options">
+            <i onClick="editNotes(this)" class="fas fa-edit"></i>
+            <i onClick="deleteNotes(this)" class="fas fa-trash-alt"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+ 
+</body>
+
+<script src="index.js"></script>
+</html>
